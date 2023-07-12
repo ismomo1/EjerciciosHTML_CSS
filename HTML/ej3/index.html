@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf8">
+    <title>Ejercicio 3</title>
+</head>
+<form>
+    <br>
+    <p><label for="nombre">Nombre*</label>
+        <input type="text" name="nombre" required>&nbsp;&nbsp;
+        <label for="apellidos">Apellidos*</label>
+        <input type="text" name="apellidos" required>
+    </p>
+    <div>Dirección:
+        <p>
+            <label for="tipo_via">Tipo de vía*</label>
+            <select name="tipo_via" required>
+                <option value="calle">Calle</option>
+                <option value="avenida">Avenida</option>
+                <option value="plaza">Plaza</option>
+            </select>&nbsp;&nbsp;
+            <label for="nombre_via">Nombre de vía*</label>
+            <input type="text" name="nombre_via" required>
+        </p>
+        <p>
+            <label for="CP">Código postal*</label>
+            <input type="number" min="10000" max="99999" required>&nbsp;&nbsp;
+            <label for="ciudad">Ciudad*</label>
+            <input type="text" name="ciudad" required>
+        </p>
+        <p>
+            <label for="provincia">Provincia*</label>
+            <input type="text" name="provincia" required>&nbsp;&nbsp;
+            <label for="pais">País*</label>
+            <select name="pais" required>
+                <option value="españa">España</option>
+                <option value="francia">Francia</option>
+                <option value="portugal">Portugal</option>
+                <option value="andorra">Andorra</option>
+            </select>
+        </p>
+        <br>
+    </div>
+    <p><label for="nacimiento">Fecha de nacimiento*</label>
+        <input type="date" name="nacimiento" required>
+    </p>
+    <p>
+        <label for="nota_media">Nota media en la universidad</label>
+        <input type="number" name="nota_media" min="0" max="10" step="0.1">
+    </p>
+    <p>
+        <label for="telefono">Número de teléfono*</label>
+        <input type="tel" name="telefono" pattern="[0-9]{9}" required>
+    </p>
+    <p>
+        <label for="correo">Correo electrónico*</label>
+        <input type="email" name="correo" required>
+    </p>
+    <p>
+        <label for="contraseña">Contraseña*</label>
+        <input type="password" name="contraseña" required>&nbsp;&nbsp;
+        <label for="contraseña2">Repetir contraseña*</label>
+        <input type="password" name="contraseña2" required>
+    </p>
+    <p>
+        <label for="sel_pais">Seleccionar país*</label>
+        <select name="sel_pais" required>
+            <option value="españa">España</option>
+            <option value="francia">Francia</option>
+            <option value="portugal">Portugal</option>
+            <option value="andorra">Andorra</option>
+        </select>
+    </p>
+    <p>
+        <label for="tipo_cuenta">Tipo de cuenta*</label>
+        <select name="tipo_cuenta" required>
+            <option value="gratuita">Gratuita</option>
+            <option value="basica">Básica</option>
+            <option value="premium">Premium</option>
+        </select>
+    </p>
+    <p>
+        Descripción del tipo de cuenta:
+    <ul>
+        <li>Gratuita: anuncios, resolución máxima 720p, máximo de 2 horas de contenido al día, 1 dispositivo.</li>
+        <li>Básica: sin anuncios, resolución máxima 1080p, sin límite de reproducción, 1 dispositivo.</li>
+        <li>Premium: sin anuncios, resolución máxima 4k, sin límite de reproducción, hasta 4 dispositivos.</li>
+    </ul>
+    </p>
+    <p>
+        <label for="sobre_mi">Sobre mí</label>
+        <br><br>
+        <input type="text" style="width: 300px; height: 150px;"
+            placeholder="Indique una breve descripción de sus intereses">
+    </p>
+    <p>
+        <label for="foto">Foto de perfil</label>
+        <input type="file" name="foto" accept="image/*">
+    </p>
+    <p>
+        <label for="cv">CV (formato pdf)</label>
+        <input type="file" name="cv" accept=".pdf">
+    </p>
+    <input type="submit">
+</form>
+
+</html>
