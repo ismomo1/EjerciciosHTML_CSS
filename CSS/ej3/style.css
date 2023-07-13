@@ -1,0 +1,102 @@
+.tabla {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    width: fit-content;
+}
+
+.linea {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+section {
+    border: 3px solid black;
+    border-top: none;
+    border-right: none;
+}
+
+section:last-child {
+    border-right: 3px solid black;
+}
+
+.elemento {
+    border: 3px solid black;
+}
+
+#linea1>section>div {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    cursor: crosshair;
+}
+
+#linea2>section>div {
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    cursor: cell;
+}
+
+#linea3>section>div {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 26.5px;
+    cursor: grab;
+}
+
+#uno {
+    background-color: red;
+    border-color: blue;
+    border-style: dashed;
+}
+
+#primera {
+    border-color: blue;
+    border-style: dashed;
+}
+
+#dos {
+    background-color: green;
+    border-color: red;
+    border-style: dotted
+}
+
+#segunda {
+    border-color: red;
+    border-style: dotted
+}
+
+#tres {
+    background-color: yellow;
+    border-color: green;
+    border-style: double;
+}
+
+#tercera {
+    border-color: green;
+    border-style: double;
+}
+
+#cuatro {
+    background-color: orange;
+    border-color: yellow;
+    border-style: groove;
+}
+
+#cuarta {
+    border-color: yellow;
+    border-style: groove;
+}
+
+#cinco {
+    background-color: blue;
+    border-color: orange;
+    border-style: solid;
+}
+
+#quinta {
+    border-color: orange;
+    border-style: solid;
+}

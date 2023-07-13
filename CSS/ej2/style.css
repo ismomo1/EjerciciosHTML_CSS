@@ -5,13 +5,25 @@ div{
     display:inline-block;
 }
 
+.linea1{
+    background-color: lightblue;
+}
+
 .linea1 div{
     cursor: crosshair;
+}
+
+.linea2{
+    background-color: lightcoral;
 }
 
 .linea2 div{
     width: 100px;
     cursor: cell;
+}
+
+.linea3{
+    background-color: lightgoldenrodyellow;
 }
 
 .linea3 div{
